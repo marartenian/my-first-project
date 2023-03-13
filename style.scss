@@ -8,6 +8,8 @@ $mobileL: 950px;
 $mobileM: 740px;
 $mobileS: 420px;
 
+$br:18px;
+
 
 
 @font-face {
@@ -25,17 +27,17 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 
 nav {
-
   .nav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding:10px;
+  
     .logo {
 
       .big_logo {
@@ -53,6 +55,7 @@ nav {
 
       .mobile__menu__btn {
         display: none;
+        margin-right:10px;
       }
 
       .nav__menu {
@@ -65,6 +68,11 @@ nav {
           a {
             color: $navBlack;
             text-decoration: none;
+            font-size: 18px;
+
+            &:hover{
+              color:$navBeige;
+            }
           }
         }
       }
@@ -89,6 +97,7 @@ nav {
     }
 
     @media screen and(max-width:$mobileM) {
+      
 
       .logo {
 
@@ -107,7 +116,7 @@ nav {
       }
 
       .nav__items {
-
+       
         .mobile__menu__btn {
           display: block;
         }
@@ -151,8 +160,9 @@ header{
         background-color: $navBlack;
         color:#ffff;
         padding:22px 34px;
-        border-radius:18px;
+        border-radius:$br;
         border: 2px solid $navBlack;
+
         svg{
           color:$navBeige;
         }
@@ -165,7 +175,7 @@ header{
     @media screen and (max-width:$tablet){
         
       .header__content{
-        top:30%;
+        top:26%;
         h2{
           font-size:50px;
         }
@@ -184,9 +194,9 @@ header{
     @media screen and (max-width:$mobileL){
         
       .header__content{
-        top:18%;
+        top:20%;
         h2{
-          font-size:40px;
+          font-size:35px;
         }
         p{
           font-size:18px;
@@ -201,17 +211,18 @@ header{
     @media screen and (max-width:$mobileM){
         
       .header__content{
-        top:10%;
+        top:15%;
 
         h2{
           font-size:20px;
         }
         p{
           font-size:14px;
+          padding-bottom: 10px;
         }
         button{
-          width:110px;
-          height:35px;
+          width:100px;
+          height:30px;
           font-size:8px;
           padding:0;
 
@@ -226,24 +237,24 @@ header{
     @media screen and (max-width:$mobileS){
         
       .header__content{
-        top:8%;
+        top:15%;
         h2{
           font-size:16px;
-          padding-bottom:6px;
+          padding-bottom:4px;
         }
         p{
           font-size:10px;
-          padding-bottom:10px;
+          padding-bottom:8px;
         }
         button{
-          width:80px;
-          height:25px;
-          font-size:8px;
+          width:60px;
+          height:20px;
+          font-size:7px;
           padding:0;
 
           svg{
-            width:30px;
-            height:10px;
+            width:15px;
+            height:8px;
           }
         }
       }
@@ -252,6 +263,244 @@ header{
   }
 
 }
+
+main{
+  display: flex;
+  justify-content:center;
+  margin-top:100px;
+   
+  .main__content__up{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+ 
+    .block{
+      width: 300px;
+      text-align: center;
+      
+      h4{
+        padding-bottom: 20px;
+        font-family: "dm serif display";
+        letter-spacing: 0.22px;
+        line-height: 33px;
+        font-weight: 400;
+        font-size:20px;
+      }
+      p{
+        padding-bottom:35px;
+        font-size:20px;
+        color:$textColor;
+      }
+      .view{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+
+        a{
+          display:block;
+          text-decoration: none;
+          font-size: 18px;
+          color:$textColor;
+        }
+      }
+          
+    }
+
+  }
+  
+  @media screen and (max-width:$mobileM){
+    .main__content__up{
+      flex-wrap:wrap;
+      gap:30px;
+      .block{
+        width:350px;
+        h4{
+          padding-bottom: 10px;
+        }
+        p{
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+  }
+
+  .main__content__under{
+    display: flex;
+    justify-content: center;
+    gap:70px;
+    margin-top: 150px;
+
+    .left{
+      padding-top: 50px;
+      max-width: 510px;
+
+      h3 {
+        font-family: "dm serif display";
+        font-size: 40px;
+        letter-spacing:0.22px;
+        line-height: 55px;
+        margin-bottom: 42px;
+        font-weight: 400;
+      }
+
+      p{
+        font-size: 22px;
+        letter-spacing: 0.22px;
+        line-height: 33px;
+        color:$textColor;
+        margin-bottom: 42px;
+      }
+      .small__block{
+        display: flex;
+        align-items:center;
+        gap:20px;
+        margin-bottom:50px;
+
+        span{
+          color:$textColor;
+        }
+      }
+
+      button{
+        width:250px;
+        height:71px;
+        background-color: $navBlack;
+        color:#ffff;
+        padding:12px 15px;
+        border-radius:$br;
+        border:1px solid $navBlack;
+
+        svg{
+          color:$navBeige;
+        }
+      }
+    }
+    .right{
+      max-width:542px;
+
+      img{
+        width: inherit;
+      }
+    }
+  }
+  @media screen and (max-width:$tablet){
+    .main__content__under{
+      gap:10px;
+        .left{
+        
+          h3{
+            font-size: 36px;
+            margin-bottom: 30px;
+
+            }
+            p{
+              font-size:16px;
+              margin-bottom: 30px;
+
+              
+
+            }
+            .small__block{
+              margin-bottom:30px;
+            }
+
+           button{
+              width:180px;
+              height:60px;
+              padding:10px 5px;
+              font-size: 14px;
+
+              svg{
+                width:28px;  
+                height:15px; 
+               }
+    
+           }
+
+        }
+       
+       .right{
+        width: 100%;
+       }
+      }
+     
+    }
+    @media screen and (max-width:$mobileL){
+      .main__content__under{
+        gap:10px;
+          .left{
+            h3{
+              font-size: 28px;
+              margin-bottom: 18px;
+  
+              }
+              p{
+                font-size:14px;
+                margin-bottom: 18px;
+              }
+              .small__block{
+                margin-bottom:18px;
+              }
+             button{
+                width:160px;
+                height:40px;
+                padding:0px 0px;
+                font-size: 10px;
+  
+                svg{
+                  width:20px;  
+                  height:10px;          
+                  }
+      
+             }
+  
+          }
+         
+         .right{
+          width: 100%;
+         }
+        }
+       
+      }
+    
+  
+  @media screen and (max-width:$mobileM){
+    .main__content__under{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:20px;
+      margin-top: 50px;
+      
+      .left{
+        text-align:center;
+
+        .small__block{
+          justify-content: center;
+      }
+      button{
+        width:110px;
+        height:30px;
+        padding:0px 0px;
+        font-size: 8px;
+
+        svg{
+          width:10px;  
+          height:5px;          
+          }
+
+      }
+
+    }
+    }
+    }
+  }
+
+
+
+
+
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
