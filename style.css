@@ -13,6 +13,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
+  padding: 0px 30px 0px 30px;
 }
 
 nav .nav {
@@ -252,7 +253,7 @@ main .main__content__under {
 }
 main .main__content__under .left {
   padding-top: 50px;
-  max-width: 510px;
+  max-width: 480px;
 }
 main .main__content__under .left h3 {
   font-family: "dm serif display";
@@ -295,10 +296,14 @@ main .main__content__under .right {
 }
 main .main__content__under .right img {
   width: inherit;
+  display: block;
 }
 @media screen and (max-width: 1095px) {
   main .main__content__under {
     gap: 10px;
+  }
+  main .main__content__under .left {
+    padding-top: 20px;
   }
   main .main__content__under .left h3 {
     font-size: 36px;
@@ -329,16 +334,19 @@ main .main__content__under .right img {
   main .main__content__under {
     gap: 10px;
   }
+  main .main__content__under .left {
+    padding-top: 10px;
+  }
   main .main__content__under .left h3 {
     font-size: 28px;
     margin-bottom: 18px;
   }
   main .main__content__under .left p {
     font-size: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   main .main__content__under .left .small__block {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   main .main__content__under .left button {
     width: 160px;
@@ -376,6 +384,434 @@ main .main__content__under .right img {
   main .main__content__under .left button svg {
     width: 10px;
     height: 5px;
+  }
+}
+main .about__section {
+  margin-top: 140px;
+  background: #F4F0EC;
+  border-radius: 70px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+main .about__section h2 {
+  font-size: min(46px, max(23px + 2vw));
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292F36;
+  font-family: "dm serif display";
+}
+main .about__section .about__section__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main .about__section .about__section__items .about__section__item {
+  max-width: 330px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-top: 47px;
+  margin-bottom: 120px;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content {
+  margin: 38px 20px;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content .about__section__item__cover {
+  display: flex;
+  gap: 20px;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content .about__section__item__cover img {
+  display: block;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content .about__section__item__cover h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #292F36;
+  font-family: "dm serif display";
+  letter-spacing: 0.22px;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content .about__section__item__cover h6 {
+  color: #4D5053;
+  font-size: 18px;
+  letter-spacing: 0.22px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+main .about__section .about__section__items .about__section__item .about__section__item__content p {
+  font-size: min(20px, max(10px + 2vw));
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  padding-top: 20px;
+}
+@media screen and (max-width: 950px) {
+  main .about__section .about__section__items {
+    flex-wrap: wrap;
+  }
+  main .about__section .about__section__items .about__section__item {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .about__section .about__section__items .about__section__item .about__section__item__content {
+    margin: 10px 8px;
+    gap: 5px;
+  }
+  main .about__section .about__section__items .about__section__item .about__section__item__content p {
+    padding-top: 10px;
+  }
+  main .about__section .about__section__items .about__section__item .about__section__item__content img {
+    width: 50px;
+    height: 50px;
+  }
+  main .about__section .about__section__items .about__section__item .about__section__item__content .about__section__item__cover {
+    gap: 10px;
+  }
+}
+main .logo__section {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+}
+main .logo__section img {
+  display: block;
+}
+@media screen and (max-width: 1095px) {
+  main .logo__section {
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .logo__section {
+    flex-direction: column;
+  }
+}
+main .project__section h2 {
+  font-size: min(46px, max(23px + 2vw));
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292F36;
+  font-family: "dm serif display";
+}
+main .project__section p {
+  font-size: min(20px, max(10px + 2vw));
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  padding-top: 25px;
+  text-align: center;
+}
+main .project__section .project__section__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 70px;
+}
+main .project__section .project__section__items .project__section__item .project__section__item__cover {
+  max-width: 500px;
+  overflow: hidden;
+}
+main .project__section .project__section__items .project__section__item .project__section__item__cover img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .project__section .project__section__items .project__section__item .project__section__item__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  align-items: center;
+}
+@media screen and (max-width: 420px) {
+  main .project__section .project__section__items .project__section__item .project__section__item__description {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  main .project__section .project__section__items .project__section__item .project__section__item__description .icon {
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+  }
+}
+main .project__section .project__section__items .project__section__item .project__section__item__description .project__section__item__text h5 {
+  font-size: min(25px, max(12px + 2vw));
+  font-weight: 400;
+  color: #292F36;
+  letter-spacing: 0.22px;
+  margin-bottom: 8px;
+  font-family: "dm serif display";
+}
+main .project__section .project__section__items .project__section__item .project__section__item__description .project__section__item__text span {
+  display: block;
+  font-size: min(22px, max(11px + 2vw));
+  letter-spacing: 0.22px;
+  color: #4D5053;
+}
+main .project__section .project__section__items .project__section__item .project__section__item__description .icon {
+  cursor: pointer;
+}
+main .history__table {
+  margin-top: 128px;
+  margin-bottom: 128px;
+  background: #F4F0EC;
+}
+main .history__table .history__table__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 100px 0px;
+}
+main .history__table .history__table__items .history__table__item p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  text-align: center;
+}
+@media screen and (max-width: 420px) {
+  main .history__table .history__table__items .history__table__item .icon__line {
+    display: none;
+  }
+}
+@media screen and (max-width: 1095px) {
+  main .history__table .history__table__items {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .history__table .history__table__items {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
+main .blog__section h2 {
+  font-family: "dm serif display";
+  font-size: 40px;
+  letter-spacing: 0.22px;
+  line-height: 55px;
+  padding-bottom: 21px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+main .blog__section p {
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  line-height: 33px;
+  color: #4D5053;
+  margin-bottom: 42px;
+  text-align: center;
+}
+main .blog__section .blog__section__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 740px) {
+  main .blog__section .blog__section__items {
+    gap: 10px;
+  }
+}
+main .blog__section .blog__section__items .blog__section__item {
+  max-width: 366px;
+  border: 1px solid #E7E7E7;
+  padding: 20px;
+  border-radius: 62px;
+  margin-bottom: 40px;
+}
+main .blog__section .blog__section__items .blog__section__item .blog__section__item__cover {
+  max-width: 345px;
+  max-height: 296px;
+  overflow: hidden;
+}
+main .blog__section .blog__section__items .blog__section__item .blog__section__item__cover img {
+  display: block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .blog__section .blog__section__items .blog__section__item .blog__section__item__description h3 {
+  font-size: min(22px, max(10px + 2vw));
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-family: "dm serif display";
+  margin: 0;
+  padding-top: 15px;
+  color: #292F36;
+}
+main .blog__section .blog__section__items .blog__section__item .blog__section__item__description .blog__section__item__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .blog__section .blog__section__items .blog__section__item .blog__section__item__description .blog__section__item__text span {
+  display: block;
+  color: #4D5053;
+  font-size: min(18px, max(9px + 2vw));
+}
+@media screen and (max-width: 740px) {
+  main .blog__section .blog__section__items .blog__section__item .blog__section__item__description .blog__section__item__text {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main .blog__section .blog__section__items .blog__section__item .blog__section__item__description .blog__section__item__text span {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+}
+@media screen and (max-width: 740px) {
+  main .blog__section .blog__section__items .blog__section__item .blog__section__item__description h3 {
+    text-align: center;
+  }
+}
+main .dark__block {
+  background: #292F36;
+  border-radius: 70px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+main .dark__block .dark__block__content {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+main .dark__block .dark__block__content h3 {
+  font-family: "dm serif display";
+  font-size: min(44px, max(22px + 2vw));
+  letter-spacing: 0.22px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+main .dark__block .dark__block__content p {
+  font-size: min(22px, max(11px + 2vw));
+  letter-spacing: 0.22px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 9px 31px;
+}
+main .dark__block .dark__block__content .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 21px 34px;
+  background: #CDA274;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 31px auto;
+  border-radius: 18px;
+}
+@media screen and (max-width: 740px) {
+  main .dark__block .dark__block__content .contact {
+    padding: 15px 12px;
+    gap: 0px;
+  }
+  main .dark__block .dark__block__content .contact a {
+    font-size: 13px;
+  }
+}
+main .dark__block .dark__block__content .contact svg {
+  color: #292F36;
+}
+main .dark__block .dark__block__content .contact a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer .footer .footer__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+@media screen and (max-width: 950px) {
+  footer .footer .footer__items {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  footer .footer .footer__items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .footer .footer__items .footer__item .social {
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer .footer .footer__items .footer__item .p {
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  font-weight: 400;
+  color: #4D5053;
+  text-align: center;
+}
+footer .footer .footer__items .footer__item .social {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 40px;
+}
+footer .footer .footer__items .footer__item h5 {
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  color: #292F36;
+  font-family: "dm serif display";
+  font-weight: 400;
+}
+footer .footer .footer__items .footer__item ul {
+  padding-top: 21px;
+}
+footer .footer .footer__items .footer__item ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+footer .footer .footer__items .footer__item ul li a {
+  text-decoration: none;
+  color: #4D5053;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+}
+footer .footer .footer__text {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer .footer .footer__text p {
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+footer .footer .footer__text p span {
+  color: #CDA274;
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  font-weight: 400;
+}
+@media screen and (max-width: 820px) {
+  footer .footer .footer__text {
+    margin-top: 80px;
   }
 }
 
